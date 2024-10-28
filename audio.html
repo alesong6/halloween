@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMHEIN</title>
+    <link rel="stylesheet" href="paginahalloween.css">
+    <script>
+        function verificar() {
+            const palavra = document.getElementById("palavra").value.toUpperCase();
+            if (palavra === "SAMHEIN") {
+                window.location.href = "susto.html"; // Redireciona para a nova página
+            } else {
+                alert("Palavra incorreta! Tente novamente.");
+            }
+        }
+    </script>
+</head>
+ 
+<body>
+ 
+    <h1>Descubra a palavra secreta!</h1>
+ 
+    <p class="texto">
+        "Na noite em que as almas dançam e as bruxas se reúnem
+        um antigo festival celebra o que o outono ensina.
+        Quando as sombras crescem e as folhas caem.
+        O nome que procuras, em mistério se entrelaçam.
+        Procure nas tradições, nas histórias que vêm. A resposta é um eco além do além."
+    </p>
+ 
+    <div class="caixa" id="caixa">
+        <h2>Qual é a palavra secreta?</h2>
+        <input type="text" id="palavra" placeholder="Digite a palavra...">
+        <button onclick="verificar()">Enviar</button>
+    </div>
+ 
+</body>
+ 
+</html>

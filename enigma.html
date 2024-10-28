@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function verificarResposta(event) {
+            event.preventDefault(); 
+            const resposta = document.getElementById('mensagem').value.trim().toUpperCase(); 
+            
+            
+            if (resposta === 'SAMHAIN') {
+                window.location.href = 'index2.html'; 
+            } else {
+                alert('Resposta incorreta! Tente novamente.'); 
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Descubra a palavra secreta</h1>
+    <p>Na noite em que as almas dançam e as bruxas se reúnem,<br>
+        um antigo festival celebra o que outono ensina.<br>
+        Quando as sombras crescem, e as folhas caem. <br>
+        O nome que procuras, em mistério se entrelaçam. <br>
+        Procure nas tradições, nas histórias que vêm. <br>
+        A resposta é um eco além do além.</p>
+       
+    <form onsubmit="verificarResposta(event)"> 
+        <label for="mensagem"></label>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite aqui"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

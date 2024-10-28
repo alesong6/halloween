@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMHAIN</title>
+    <link rel="stylesheet" href="style22.css">
+    <style>
+        
+        #susto {
+            display: none; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; 
+            width: 300px; 
+        }
+    </style>
+    <script>
+        
+        function mostrarSusto() {
+            const body = document.body;
+            body.style.backgroundImage = "url('https://i.pinimg.com/originals/c0/7f/97/c07f97f3234f1820d0388f1a62377a9a.gif')"; 
+            body.style.backgroundSize = "cover"; 
+            body.style.backgroundPosition = "center"; 
+            document.getElementById('susto').style.display = 'block'; 
+        }
+
+        setTimeout(mostrarSusto, 5000); 
+    </script>
+</head>
+<body>
+    <h1> Você encontrou a palavra mágica: SAMHAIN! </h1>
+    <p> Parabéns! Você descobriu o código secreto. </p>
+    <p> Volte para a sala onde tudo começou. </p>
+    
+</body>
+</html>
